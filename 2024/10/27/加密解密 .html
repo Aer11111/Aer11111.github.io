@@ -1,0 +1,652 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+       | Hexo
+    
+  </title>
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">Fetching...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">Home</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">Archive</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">Category</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">Tag</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">About</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">Gallery</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="Catalog"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	Updated on
+
+	<a href="/2024/10/27/%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86%20.html" itemprop="url">
+		<time datetime="2024-10-27T09:04:18.632Z" itemprop="dateUpdated">
+	  		2024-10-27
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<p>title:  加密解密 </p>
+<p>加密：对称加密</p>
+<p>​			非对称加密</p>
+<p><a target="_blank" rel="noopener" href="https://ctf-wiki.org/reverse/identify-encode-encryption/introduction/">常见加密算法和编码识别 - CTF Wiki (ctf-wiki.org)</a></p>
+<h2 id="程序中的加密算法（Base64，TEA，AES，RC4，MD5）"><a href="#程序中的加密算法（Base64，TEA，AES，RC4，MD5）" class="headerlink" title="程序中的加密算法（Base64，TEA，AES，RC4，MD5）"></a>程序中的加密算法（Base64，TEA，AES，RC4，MD5）</h2><p>Base64：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">将3字节的数据  ，先后放入一个24位的缓冲区中，先来的字节占高位，数据不足3字节，于缓冲器中剩下的比特用0补足，每次取出6比特（2∧6）  </span><br></pre></td></tr></table></figure>
+
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240314162011874.png" alt="image-20240314162011874">base64编码表<img src="https://img-blog.csdnimg.cn/20210420090542415.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3h1YW5saTQ4NDU=,size_16,color_FFFFFF,t_70" alt="img">ascll表，16进制转换<br><img src="https://iknow-pic.cdn.bcebos.com/cc11728b4710b9121f9e1c6ed1fdfc03934522c7" alt="img"></p>
+<p><img src="https://img-blog.csdnimg.cn/5ba04c19c5d24497a7f8f9e66e933541.png#pic_center" alt="在这里插入图片描述"></p>
+<p>base64解码加密MZ1-TXox</p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320192223958.png" alt="image-20240320192223958"></p>
+<p>编码中出现等号                    MZ</p>
+<p>加密过程中出现空缺用等号补齐 <b><font color="red" size="3" face>Base64要求把每三个8Bit的字节转换为四个6Bit的字节，也就是说编码后的字符长度必然是4的倍数，那么不是4的倍数怎么办，用&#x3D;号补位，在Base64转换表是没有&#x3D;号的</font></b> </p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320193359008.png" alt="image-20240320193359008"></p>
+<p>应用python如何解码54K55Liq6LWe5ZCn56eL5qKo6laP</p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320195909083.png" alt="image-20240320195909083"></p>
+<p>TEA：<img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240314163437716.png" alt="image-20240314163437716">在 Tea 算法中其最主要的识别特征就是 拥有一个 magic number ：0x9e3779b9 </p>
+<p>AES（分组加密算法）：矩阵</p>
+<p>明文长度固定为128，0密钥长度128，192，256（密钥长度每增加64位，算法循环    次数增加两轮–128循环10轮）</p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320203636135.png" alt="image-20240320203636135"></p>
+<p> <b><font color="red" size="3" face>AES加密过程</font></b> </p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320204219029.png"></p>
+<p>初始变换（进行异或运算）<img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320204404107.png" alt="image-20240320204404107"></p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320204457045.png" alt="image-20240320204457045"></p>
+<p>字节转换（查表进行转换19代表第一行第9列）<img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320204514603.png" alt="image-20240320204514603"></p>
+<p>行移位</p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320204720903.png" alt="image-20240320204720903"></p>
+<p>列混合，左乘是固定的矩阵</p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320204816452.png" alt="image-20240320204816452"></p>
+<p>轮密钥加（列混合的结果和子密钥矩阵进行异或，子密钥矩阵是将刚开始的16矩阵密钥进行10轮扩展）</p>
+<p>密钥  扩展<img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320205412780.png" alt="image-20240320205412780"></p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320205655132.png" alt="image-20240320205655132"></p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320205728551.png" alt="image-20240320205728551"></p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240320205743840.png" alt="image-20240320205743840"></p>
+<p>RC4：生成一个密钥，和明文异或生成密文<img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240314163553635.png" alt="image-20240314163553635"></p>
+<p>流密码：一个bit一个bit加密</p>
+<p> <b><font color="red" size="3" face>密钥长度可变 </font></b> ，以一个足够大的表S为基础，对表进行 <b><font color="SEAGREEN" size="3" face>非线性</font></b> 变换，产生密钥流</p>
+<p> <b><font color="SEAGREEN" size="3" face>函数在平面是直线，线性&#x3D;&#x3D;&#x3D;曲线，非线性</font></b> </p>
+<p> <b><font color="red" size="3" face>加密过程</font></b> <b><font color="red" size="3" face> ：</font></b> </p>
+<ol>
+<li><p>初始化S表</p>
+<ol>
+<li>对S表（升序，s[0]&#x3D;0……）进行线性填充，一般为256个字节</li>
+<li>用种子密钥填充另一个 256字节的K表(若种子密钥长度&lt;256，循环使用填充K表)</li>
+<li>用K表对S表进行初始转换</li>
+</ol>
+<p><img src="file:///F:/IMG_20240321_191918.jpg" alt="img"></p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240321194428388.png" alt="image-20240321194428388"></p>
+</li>
+<li><p>密钥流的生成（为每个待加密的字节生成一个伪随机数从s表获得，用来异或）</p>
+</li>
+<li><p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240321194749767.png" alt="image-20240321194749767"></p>
+</li>
+</ol>
+<p>​		 <b><font color="blue" size="3" face>当S表完成初始化，种子密钥不再被使用	</font></b> 		</p>
+<p>MD5</p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240423195313105.png" alt="image-20240423195313105"><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240423195534056.png" alt="image-20240423195534056"></p>
+<h2 id="脚本语言逆向特点"><a href="#脚本语言逆向特点" class="headerlink" title="  脚本语言逆向特点"></a><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240423195739308.png" alt="image-20240423195739308"><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240423195821937.png" alt="image-20240423195821937">  脚本语言逆向特点</h2><p>.Net程序逆向：<img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240314165241159.png" alt="image-20240314165241159"></p>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240314165407069.png" alt="image-20240314165407069"></p>
+<p>Python逆向</p>
+<ul>
+<li>Pyc逆向</li>
+</ul>
+<p><img src="/2024/10/27/Users\86187\AppData\Roaming\Typora\typora-user-images\image-20240314184711589.png" alt="image-20240314184711589"></p>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">Related post</div>
+					<div>Comment</div>
+					<div>Share</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">To Top</a>
+		
+		
+			<a href="/2024/10/27/%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86.html" title="加密解密" rel="next">
+				Next post&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/10/27/%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86.html" title="加密解密">
+								加密解密			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 27日, 2024				
+							</p>
+							<p class="relate-post-content">
+								加密：对称加密
+​			非对称加密
+常见加密算法和编码识别 - CTF Wiki (ctf-wiki.org)
+程序中的加密算法（Base64，TEA，AES，RC4，MD5）Base64：
+1将3字节的数据  ，先后放入一个24位的...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/10/27/%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86.html" title="加密解密">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="加密解密"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">Home</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">Archive</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">Category</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">Tag</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">About</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">Gallery</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2024, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
